@@ -13,3 +13,8 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+dependencies {
+    // this is a vulnerable library, will it trigger an issue
+    implementation("org.springframework.boot:spring-boot-starter-actuator:2.7.3")
+}
