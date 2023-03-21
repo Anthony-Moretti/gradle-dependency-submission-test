@@ -12,6 +12,14 @@ plugins {
 
 apply plugin: "org.springframework.boot"
 
+repositories {
+    // Maven repo on local machine, only local dev builds of libs are usually published here
+    mavenLocal()
+
+    // External dependencies, the majority of dependencies, are resolved here
+    mavenCentral()
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
