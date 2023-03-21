@@ -9,9 +9,6 @@ plugins {
     id 'com.android.library' version '7.2.2' apply false
     id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
 }
-
-apply plugin: "org.springframework.boot"
-
 repositories {
     // Maven repo on local machine, only local dev builds of libs are usually published here
     mavenLocal()
@@ -26,5 +23,5 @@ task clean(type: Delete) {
 
 dependencies {
     // this is a vulnerable library, will it trigger an issue
-    implementation("org.springframework.boot:spring-boot-starter-actuator:2.7.3")
+    implementation("org.yaml.snakeyaml:1.30")
 }
