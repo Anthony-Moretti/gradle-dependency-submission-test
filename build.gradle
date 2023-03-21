@@ -9,5 +9,5 @@ repositories {
 dependencies {
 	implementation "org.springframework:spring-core:5.3.0"
     // this is a vulnerable library, will it trigger an issue
-    implementation("org.yaml.snakeyaml:1.30")
+    implementation("org.yaml:snakeyaml:1.30")
 }
