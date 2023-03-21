@@ -60,5 +60,5 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
     // this is a vulnerable library, will it trigger an issue
-    implementation("org.yaml.snakeyaml:1.30")
+    implementation("org.yaml:snakeyaml:1.30")
 }
