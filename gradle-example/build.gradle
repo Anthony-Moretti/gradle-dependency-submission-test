@@ -9,16 +9,7 @@ plugins {
     id 'com.android.library' version '7.2.2' apply false
     id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
 }
-repositories {
-    // External dependencies, the majority of dependencies, are resolved here
-    mavenCentral()
-}
 
 task clean(type: Delete) {
     delete rootProject.buildDir
-}
-
-dependencies {
-    // this is a vulnerable library, will it trigger an issue
-    implementation("org.yaml.snakeyaml:1.30")
 }
